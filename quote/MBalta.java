@@ -1,5 +1,5 @@
 package quote;
-//Change for commit
+//Change for commit v1
 public class MBalta implements Quotation {
     public int year() {
         return 1705;
