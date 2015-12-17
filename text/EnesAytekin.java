@@ -8,7 +8,7 @@ public class EnesAytekin implements Processor {
 		for(int i=0; i<input.length(); i++)
        {
           newString = newString + input.substring(i,i+1)+'*';
-	  newStringBigger = newString.UpperCase();
+	  newStringBigger = newString.toUpperCase();
        }	
         return  newStringBigger+ "\nOldLength is : " + input.length()+"\nNewLength is :"+newStringBigger.length();
     }
