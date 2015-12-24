@@ -1,0 +1,31 @@
+
+// Getting class
+class javax.crypto.Cipher
+class javax.crypto.spec.SecretKeySpec
+interface java.security.Key
+class java.lang.String
+// Creating string that we want to encrypt.
+text = new String("Hello Encryption"); 
+// Creating string that we want cover text with 128 Bytes
+key = new String("Bar12345Bar12345"); 
+// Convert to the Byte Array
+text_byte = text.getBytes();
+keyBytes = key.getBytes();
+// Creating a Key with AES. AES is the algorithm for encryption.
+sk = new SecretKeySpec(keyBytes, "AES"); 
+// Creating a cipher with AES.
+cipher = Cipher.getInstance("AES"); 
+// Creating init cipher with encryptmode and its value 1.
+cipher.init(1, sk);
+// With doFinal method, we encrypt text "Hello Encryption" in a byte array format.
+encryption = cipher.doFinal(text_byte); 
+// Converting the byte array to String
+encrypted = new String(encryption); 
+// Creating a cipher with AES for decryption.
+cipherdec = Cipher.getInstance("AES"); 
+// Creating init cipher with decryptmode and its value 2.
+cipherdec.init(2, sk);
+// With doFinal method, we decrypt to given string.
+decrypted = cipherdec.doFinal(encryption); 
+// Converting the byte array to String
+decrypt = new String(decrypted); 
