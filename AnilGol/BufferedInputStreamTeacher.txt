@@ -1,0 +1,49 @@
+class java.lang.String
+// Our directory name
+directoryName = new String("AnilGol"); //--> "AnilGol"
+// Our file name to read
+fileName = new String("BigData.txt"); //--> "BigData.txt"
+class java.io.File
+// Our file to read
+file = new File(directoryName, fileName); //--> AnilGol\BigData.txt
+class java.io.FileInputStream
+// Input stream of our file to read from
+fileInputStream = new FileInputStream(file);
+class java.io.BufferedInputStream
+// We create a buffered input stream
+bufferedInputStream = new BufferedInputStream(fileInputStream);
+// We create a byte array with size 5000
+byteArray = Menu.newArray("byte", 5000);
+// We read most of the contents to this byte array
+bufferedInputStream.read(byteArray);
+fullString = new String(byteArray);
+// We check available bytes which we can read
+bufferedInputStream.available();
+// We check if mark is supported for this stream
+bufferedInputStream.markSupported();
+// We read character by character
+bufferedInputStream.read(); //--> 104
+bufferedInputStream.read(); //--> 97
+bufferedInputStream.read(); //--> 118
+bufferedInputStream.read(); //--> 105
+// Mark where we are
+bufferedInputStream.mark(0);
+// We continue reading
+bufferedInputStream.read(); //--> 111
+bufferedInputStream.read(); //--> 114
+bufferedInputStream.read(); //--> 115
+bufferedInputStream.read(); //--> 46
+// We reset to return our marked position
+bufferedInputStream.reset();
+// We read the same characters
+bufferedInputStream.read(); //--> 111
+bufferedInputStream.read(); //--> 114
+bufferedInputStream.read(); //--> 115
+bufferedInputStream.read(); //--> 46
+// We create a new byte array
+partArray = Menu.newArray("byte", 50);
+// We read the remaining 5 bytes to our partArray's bytes between 12-16
+bufferedInputStream.read(partArray, 12, 16);
+//We close our streams
+fileInputStream.close();
+bufferedInputStream.close();
