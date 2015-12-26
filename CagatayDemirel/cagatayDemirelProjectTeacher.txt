@@ -1,0 +1,69 @@
+Menu.chooser();
+//Importing classes
+class mae.sss.Chooser
+class java.lang.Float
+class java.lang.Integer
+class java.util.Random
+class javax.swing.JPanel
+class java.awt.Color
+class java.awt.Graphics
+//Creating a new JPanel
+mypanel = new JPanel();
+//make it visible in a window
+window = Menu.toWindow(mypanel); 
+//Drag the window for visible area
+window.setBounds(300, 300, 719, 348);
+//Creating graphics
+mygraphic = mypanel.getGraphics(); 
+//Creating new color
+color1 = new Color(0.04, 0.35, 0.95);
+//Created color is setting
+mygraphic.setColor(color1);
+//drawing oval
+mygraphic.fillOval(250, 50, 220, 220);
+//clear for new drawing
+mygraphic.clearRect(250, 50, 220, 220);
+//Created color is setting
+mygraphic.setColor(color1);
+//drawing bigger oval
+mygraphic.fillOval(240, 40, 240, 240);
+//clear for new drawing
+mygraphic.clearRect(240, 40, 240, 240);
+//Created color is setting
+mygraphic.setColor(color1);
+//drawing much bigger oval
+mygraphic.fillOval(230, 30, 260, 260);
+//Creating new color
+color2 = new Color(0.23, 0.54, 0.12);
+//Created color is setting
+mygraphic.setColor(color2);
+//drawing oval
+mygraphic.fillOval(230, 30, 260, 260);
+//Creating new color
+color3 = new Color(0.41, 0.23, 0.66);
+//Created color is setting
+mygraphic.setColor(color3);
+//drawing oval
+mygraphic.fillOval(230, 30, 260, 260);
+//clear for new drawing
+mygraphic.clearRect(230, 30, 260, 260);
+//Created color is setting
+mygraphic.setColor(color3);
+//drawing smaller oval
+mygraphic.fillOval(250, 50, 220, 220);
+//clear for new drawing
+mygraphic.clearRect(250, 50, 220, 220);
+//Created color is setting
+mygraphic.setColor(color3);
+//drawing  much smaller oval
+mygraphic.fillOval(260, 60, 200, 200);
+mygraphic.clearRect(260, 60, 200, 200);
+//Created color is setting
+mygraphic.setColor(color3);
+//drawing  flattened oval
+mygraphic.fillOval(260, 80, 200, 160);
+mygraphic.clearRect(260, 80, 200, 160);
+//Created color is setting
+mygraphic.setColor(color3);
+//drawing more flattened oval
+mygraphic.fillOval(260, 100, 200, 120);
