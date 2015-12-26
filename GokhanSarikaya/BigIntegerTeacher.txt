@@ -1,0 +1,31 @@
+//import string class
+class java.lang.String
+//first string (50)
+s1 = new String("50");
+//second sring (30)
+s2 = new String("30");
+class java.math.BigInteger
+//create big integer (string-->big integer)
+bi1 = new BigInteger(s1);
+bi2 = new BigInteger(s2);
+//bi1 + bi2
+r1 = bi1.add(bi2);
+//bi1 - bi2
+r2 = bi1.subtract(bi2);
+//bi1 * bi2
+r3 = bi1.multiply(bi2);
+//bi1 / bi2
+r4 = bi1.divide(bi2);
+//create new base big integer to exceed the integer limits ("123456789")
+s3 = new String("123456789");
+e2 = new BigInteger(s3);
+//result = result * base
+e3 = e2.multiply(e2);
+//result = result * base
+e4 = e3.multiply(e2);
+//result = result * base
+e5 = e4.multiply(e2);
+//shift left operation 5 times
+shl = e5.shiftLeft(5);
+//shift right operation 5 times,to get same value
+shr = shl.shiftRight(5);
