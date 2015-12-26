@@ -1,0 +1,25 @@
+//imports
+class java.awt.BorderLayout;
+class java.awt.Color;
+class java.awt.Graphics;
+class java.awt.Graphics2D;
+class java.awt.geom.RoundRectangle2D;
+class javax.swing.JApplet;
+class javax.swing.JFrame;
+class javax.swing.JOptionPane;
+class javax.swing.WindowConstants;
+
+//
+frame = new JFrame("MusabRoundRectangle2D");
+frame.setDefaultCloseOperation(3);
+
+//
+applet = new JApplet(); 
+x10 = frame.getContentPane(); 
+applet = x10.add(applet);
+
+//
+x = JOptionPane.showInputDialog("enter number for x axis");
+y = JOptionPane.showInputDialog("enter number for x axis"); 
+z = JOptionPane.showInputDialog("enter number for x axis"); 
+t = JOptionPane.showInputDialog("enter number for x axis");
